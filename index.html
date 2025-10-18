@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scopri la data 💖</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Scopri la data</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
       padding: 20px;
-      background-color: #f9f9f9;
-    }
-    h1 {
+      background-color: #fff;
       color: #333;
     }
     .video-container {
       position: relative;
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-      padding-top: 56.25%; /* 16:9 aspect ratio */
+      width: 360px; /* larghezza video aumentata */
+      height: 640px; /* altezza video aumentata */
+      margin: 0 auto 20px auto;
     }
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
+    video {
       width: 100%;
       height: 100%;
-      border: none;
+      border-radius: 8px;
     }
-    .cta {
-      margin-top: 20px;
-      font-size: 1.2em;
-    }
-    .cta a {
+    .link-text {
+      font-size: 16px;
+      color: #333;
       text-decoration: none;
-      color: #007bff;
+      cursor: pointer;
       font-weight: bold;
     }
-    .cta a:hover {
-      text-decoration: underline;
+    .heart {
+      color: #ff69b4; /* rosa acceso */
+      margin-left: 5px;
     }
   </style>
 </head>
 <body>
-  <h1>Scopri la data 💖</h1>
+  <h1>Scopri la data</h1>
   <div class="video-container">
-    <iframe src="https://www.kapwing.com/e/68f3a39c2597a84971e08f5e" allow="autoplay; gyroscope;" allowfullscreen></iframe>
+    <video controls>
+      <source src="https://raw.githubusercontent.com/Sosco93/SaveTheDate/main/Video%20Matrimonio%20OK.mp4" type="video/mp4" />
+      Il tuo browser non supporta il tag video.
+    </video>
   </div>
-  <div class="cta">
-    <p><a href="https://uli.st/maria-de-maria-domenico-cassese-230826" target="_blank">CLICCA QUI 💖</a></p>
-  </div>
+
+  <p>
+    <a
+      href="https://uli.st/maria-de-maria-domenico-cassese-230826"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="link-text"
+      >Un piccolo gesto per un grande sogno. Clicca qui e scopri la nostra lista nozze
+      <span class="heart">❤️</span>
+    </a>
+  </p>
 </body>
 </html>
