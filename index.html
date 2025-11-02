@@ -14,8 +14,8 @@
     }
     .video-container {
       position: relative;
-      width: 360px; /* larghezza video aumentata */
-      height: 640px; /* altezza video aumentata */
+      width: 360px;
+      height: 640px;
       margin: 0 auto 20px auto;
     }
     video {
@@ -23,45 +23,40 @@
       height: 100%;
       border-radius: 8px;
     }
-    .link-text {
-      font-size: 16px;
-      color: #333;
+    a.title-link {
       text-decoration: none;
-      cursor: pointer;
+      color: #333;
+      font-size: 20px;
       font-weight: bold;
+      display: inline-block;
+      margin-bottom: 20px;
     }
-    .heart {
-      color: #ff69b4; /* rosa acceso */
-      margin-left: 5px;
+    a.title-link:hover {
+      color: #ff69b4; /* cambia colore al passaggio del mouse */
     }
     .title-heart {
-      color: #ff69b4; /* rosa per il cuore nel titolo */
+      color: #ff69b4;
     }
   </style>
 </head>
 <body>
-  <h1>Clicca in basso per la lista nozze <span class="title-heart">❤️</span></h1> <!-- Aggiunto il cuore qui -->
+  <a
+    href="https://uli.st/maria-de-maria-domenico-cassese-230826"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="title-link"
+  >
+    Clicca QUI per scoprire i dettagli della cerimonia e confermare la tua presenza
+    <span class="title-heart">❤️</span>
+  </a>
+
   <div class="video-container">
     <video controls>
       <source src="https://raw.githubusercontent.com/Sosco93/SaveTheDate/main/Video%20Matrimonio%20OK.mp4" type="video/mp4" />
       Il tuo browser non supporta il tag video.
     </video>
   </div>
-
-  <p>
-    <a
-      href="https://uli.st/maria-de-maria-domenico-cassese-230826"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="link-text"
-      >LISTA NOZZE
-      <span class="heart">❤️</span>
-    </a>
-  </p>
 </body>
 </html>
-
-
-
 
 
